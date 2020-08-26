@@ -33,7 +33,7 @@ html {
 	font-family: 'Raleway',
 	sans-serif;
 }
-
+/* Header Styling */
 h1 {
 	font-size: 7rem;
 	text-align: center;
@@ -68,7 +68,7 @@ header {
 	
 
 }
-
+/* navigation styling */
 .home:link, .home:visited {
 	text-decoration: none;
 	color: #3d3d3d;
@@ -86,7 +86,7 @@ header {
 	color: #3d3d3d;
 }
 
-
+/* top text styling */
 h2 {
 	font-size: 4rem;
 	margin: 2%;
@@ -100,11 +100,11 @@ h2 {
 	text-align: center;
 	
 }
-
+/* main image */
 .middleImage {
 	height: 80vh;
 }
-
+/* Middle Styling */
 .middleContent {
 	display: flex;
 	justify-content: center;
@@ -120,19 +120,41 @@ h2 {
 	height: 60vh;
 	
 }
+.project1, .project2, .project3, .project4 {
+	margin-left: 1%;
+	margin-right: 1%;
+	height: 62%;
+}
 .projectText {
 	display: flex;
 	text-align: center;
 	align-items: flex-end;
 	padding: 5%;
+	color: #c9c9c9;
+	font-size: 1.25rem;
 }
 
+/* footer styling */
 footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #606161;
+	align-items: center;
 	
+}
+.contactMe {
+	padding: 2%;
+	border: #c9c9c9 solid 2px;
+	margin: 2%;
+	background-color: #9a9b9c;
+	width: 12%;
+	font-size: 1.5rem;
+	
+}
+.contactMe:link, .contactMe:visited {
+	text-decoration: none;
+	color: #3d3d3d;
 }
 
 .bottomNav {
@@ -143,5 +165,49 @@ footer {
 	margin-top: 2%;
 
 }
+/* Responsive querie 800 */
+@media(max-width: 800px){
 
+	h1 {
+		font-size: 8rem;
+	}
 
+	/* responsive nav */
+	.topNav {
+		flex-direction: column;
+		width: 15%;
+		text-align: center;
+	}
+	.home, .about, .contact, .projects {
+		padding: 7%;
+		margin: 5%;
+		font-size: 1.5rem;
+	}
+	/* Responsive intro	 */
+	h2 {
+		font-size: 6rem;
+	}
+	/* Middle responsive */
+	.middleImage {
+		height: 35vh;
+	} 
+	.projectImages {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%; 
+	}
+	/* .middleContent{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%; */
+	
+	.project1, .project2, .project3, .project4 {
+		display: flex;
+		flex-wrap: wrap; 
+		margin: px;
+	}
+
+	
+}
